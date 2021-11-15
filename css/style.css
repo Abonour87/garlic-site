@@ -1,0 +1,620 @@
+
+
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400'); */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+@font-face 
+{
+font-family: "poppins";
+src: url("../fonts/Poppins-Light.ttf");
+}
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Lato', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+     background-color: #87850f;
+}
+/* -----------------------------------main-lay-out--------------------------- */
+.main-layout{
+     padding: 95px 100px;
+     margin: 0 auto;
+}
+
+/* ---------------------------------start loader------------------------------ */
+.loader_bg .loader{
+     background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9999;
+}
+.loader_bg .loader img{
+    width: 280px;
+}
+/* ---------------------------end loader----------------------------------------- */
+/* -----------------------------main-banner---------------------------------------- */
+.main-banner{
+     background: #fff;
+     position: relative;
+     padding: 0 0 55px;
+}
+.main-banner .banner-info{
+     padding: 10px 20px 20px 30px;
+     background: #fff;
+     height: 500px;
+}
+.main-banner .banner-info h2{
+     color: #000;
+     line-height: 1.4;
+     font-size: 36px;
+     font-weight: 600;
+     font-family: poppins;
+     letter-spacing: 2px;
+}
+.main-banner .banner-info img{
+     display: block;
+     margin: 31px 0 20px;
+}
+.main-banner .banner-info p{
+     font-size: 15px;
+     font-family: 'Poppins';
+     color: #000;
+}
+.main-banner .banner-info a{
+     color: #fff;
+     background: #000;
+     width: 130px;
+     margin-top: 30px;
+     height: 50px;
+     display: block;
+     text-align: center;
+     line-height: 50px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     font-size: 17px;
+     text-decoration: none;
+     transition:ease-in 0.5s ;
+}
+.main-banner .banner-info a:hover{
+     background: #87850f;
+     color: #fff;
+}
+.main-banner .banner-img{
+     position: relative;
+}
+.main-banner .banner-img img{
+     max-width: 102%;
+}
+.main-banner .banner-img h3{
+     display: flex;
+     position: absolute;
+     color: #000;
+     font-weight: 500;
+     letter-spacing: 2px;
+     top: 0;
+     left: 0;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     right: 0;
+     bottom: 0;
+     font-size: 50px;
+}
+/* ------------------------------about----------------------------------- */
+.about{
+     position: relative;
+     padding: 55px 0 0;
+     background: #fff;
+     /* margin: 40px 0; */
+}
+.about .about-img{
+     margin-left: -15px;
+}
+.about .about-img img{
+     display: block;
+     max-width: 100%;
+}
+.about .about-info h2{
+     color: #000;
+     line-height: 1.4;
+     font-size: 36px;
+     font-weight: 600;
+     font-family: poppins;
+     letter-spacing: 2px;
+}
+.about .about-info p{
+     font-size: 15px;
+     font-family: 'Poppins';
+     color: #000;
+     margin: 30px 0 0;
+     text-align: justify;
+}
+.about .about-info a{
+     color: #fff;
+     background: #000;
+     width: 130px;
+     margin-top: 40px;
+     height: 50px;
+     display: block;
+     text-align: center;
+     line-height: 50px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     font-size: 17px;
+     text-decoration: none;
+     transition: ease-in 0.5s;
+}
+.about .about-info a:hover{
+     background: #87850f;
+     color: #fff;
+}
+/* --------------------------------------our------------------------------------------- */
+/* -----------------------------main-banner---------------------------------------- */
+.our{
+     background: #fff;
+     position: relative;
+     padding: 55px 0 0;
+}
+.our .our-info{
+     padding: 10px 20px 20px 30px;
+     background: #fff;
+     height: 500px;
+}
+.our .our-info h2{
+     color: #000;
+     line-height: 1.4;
+     font-size: 36px;
+     font-weight: 600;
+     font-family: poppins;
+     letter-spacing: 2px;
+}
+.our .our-info img{
+     display: block;
+     margin: 31px 0 20px;
+}
+.our .our-info p{
+     font-size: 15px;
+     font-family: 'Poppins';
+     color: #000;
+}
+.our .our-info a{
+     color: #fff;
+     background: #000;
+     width: 130px;
+     margin-top: 30px;
+     height: 50px;
+     display: block;
+     text-align: center;
+     line-height: 50px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     font-size: 17px;
+     text-decoration: none;
+     transition:ease-in 0.5s ;
+}
+.our .our-info a:hover{
+     background: #87850f;
+     color: #fff;
+}
+.our .our-img{
+     position: relative;
+}
+.our .our-img img{
+     max-width: 102%;
+}
+.our .our-img h3{
+     display: flex;
+     position: absolute;
+     color: #000;
+     font-weight: 600;
+     letter-spacing: 2px;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%);
+}
+/* ---------------------------------------------fruits------------------------------------ */
+.fruit{
+     background: #fff;
+     position: relative;
+     padding: 55px 0 0;
+}
+.fruit .images{
+     margin-left: -15px;
+}
+
+.fruit .fr-img img{
+     max-width: 100%;
+     margin-bottom: 20px;
+}
+.fruit .fruit-info h2{
+     color: #000;
+     line-height: 1.4;
+     font-size: 36px;
+     font-weight: 600;
+     font-family: poppins;
+     letter-spacing: 2px;
+}
+.fruit .fruit-info p{
+     font-size: 15px;
+     font-family: 'Poppins';
+     color: #000;
+     margin: 30px 0 0;
+     text-align: justify;
+}
+.fruit .fruit-info a{
+     color: #fff;
+     background: #000;
+     width: 130px;
+     margin-top: 40px;
+     height: 50px;
+     display: block;
+     text-align: center;
+     line-height: 50px;
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     font-size: 17px;
+     text-decoration: none;
+     transition: ease-in 0.5s;
+}
+.fruit .fruit-info a:hover{
+     background: #87850f;
+     color: #fff;
+}
+/* --------------------------------testimonials----------------------------------- */
+.testimonial{
+     position: relative;
+     padding: 50px 0;
+     background: #fff;
+}
+.testimonial .testi-info h2{
+     color: #000;
+     line-height: 1.4;
+     font-size: 36px;
+     font-weight: 600;
+     font-family: poppins;
+     letter-spacing: 2px;
+}
+.testimonial .testi-info p{
+     font-size: 15px;
+     font-family: 'Poppins';
+     color: #000;
+     margin: 30px 0 0;
+     text-align: justify;
+}
+.testimonial .testi-car{
+     background: #4d4f12;
+     height: 311px;
+}
+.testimonial .carousel .carousel-indicators { 
+     top: 265px;
+}
+.testimonial .carousel .carousel-indicators li{ 
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+}
+.testimonial .carousel .carousel-indicators li.active{ 
+    background: #f9c40b;
+}
+.testimonial .carousel .carousel-item { 
+
+     height: 254px;
+}
+.testimonial .carousel .carousel-item .carousel-caption{ 
+     background: #fff;
+     color: #4d4f12;
+     height: 203px;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 85%;
+     top: 45px;
+     padding: 16px 20px;
+     position: absolute;
+}
+.testimonial .carousel-caption h4{
+     font-size: 25px;
+     color: #555711;
+     line-height: 20px;
+     display: block;
+     text-align: center;
+     font-weight: 600;
+     padding: 0;
+     padding-top: 8px;
+}
+.testimonial .carousel-caption p{
+     font-size: 17px;
+     line-height: 28px;
+     color: #222122;
+     text-align: center;
+     padding-top: 20px;
+}
+
+/* -----------------------------footer----------------------------------- */
+.footer{
+     position: relative;
+    background: #fff;
+    text-align: center;
+    padding: 30px 0 0;
+}
+.footer .foot-data h3{
+     color: #535519;
+     font-size: 50px;
+     line-height: 50px;
+     font-weight: 800;
+}
+.footer .foot-data p{
+     color: #222122;
+     font-size: 17px;
+     line-height: 28px;
+     padding-top: 20px;;
+}
+/* =-------------------------coy right----------------------------- */
+.copy-right{
+     background-color: #313130;
+     color: #fff;
+     padding: 12px 0;
+     font-size: 17px;
+     margin: 0;
+     height: 55px;
+}
+.copy-right a{
+     text-decoration: none;
+     color: rgb(158, 143, 143);
+}
+/* --------------------------------------------------start media query--------------------------------------------------- */
+/* --------------------------start xs screen----------------------------- */
+@media (max-width:576px){
+     .main-banner .banner-info h2 {
+          font-size: 24px;
+      }
+      .main-banner .banner-img h3{
+           font-size: 25px;
+      }
+      .testimonial .carousel .carousel-item .carousel-caption {
+          height: 230px;
+          width: 95%;
+      }
+}
+@media (max-width:767px){
+     .main-banner .banner-info img {
+          margin: 20px auto!important;
+          display: block;
+      }
+      .main-banner .banner-img img {
+          margin: 10px auto !important;
+          max-width: 100%!important;
+      }
+      /* -------------------------------------------start about---------------------------------------------------------- */
+      .about .about-img {
+          margin-left: auto!important;
+          margin-top: -72px!important;
+      }
+      .about .about-img img {
+          margin: 10px auto !important;
+          max-width: 100%!important;
+      }
+      .about .about-info {
+          margin: 20px 0 0;
+      }
+      /* ---------------------------------------------start our-------------------------------------------------------- */
+      .our .order-2 {
+          order: 2!important;
+          height: 259px!important;
+      }
+      .our .order-1 {
+         order: 1!important;
+      }
+      .our .our-img img {
+          max-width: 100%;
+      }
+      .our .our-img {
+          margin-bottom: 30px;
+      }
+      /* --------------------------------------------start fruit------------------------------------------------------- */
+      .fruit .images {
+          margin: auto;
+      }
+      .fruit .fr-img img {
+          width: 100%;
+      }
+      /* ------------------------------------------------testimonials------------------------------------------------------ */
+      .testimonial .testi-info{
+           margin-top: 30px;
+      }
+      .footer .foot-data{
+          padding: 0 0 28px;
+      }
+}
+/* ----------------------------------------------------medium size-------------------------------------------------------- */
+@media (min-width:768px){
+     .main-banner .banner-info img {
+          margin: 20px auto!important;
+          display: block;
+      }
+      .main-banner .banner-img img {
+          margin: 10px auto !important;
+          max-width: 100%!important;
+      }
+     /* -------------------------------------------start about---------------------------------------------------------- */
+     .about .about-img {
+          margin-left: auto!important;
+          margin-top: -72px!important;
+     }
+     .about .about-img img {
+          margin: 10px auto !important;
+          max-width: 100%!important;
+     }
+     .about .about-info {
+          margin: 20px 0 0;
+     }
+     /* ---------------------------------------------start our-------------------------------------------------------- */
+     .our {
+          height: 950px;
+      }
+      .our .our-img img {
+          max-width: 100%;
+      }
+      .our .our-img {
+          margin-bottom: 30px;
+      }
+     /* --------------------------------------------start fruit------------------------------------------------------- */
+     .fruit .images {
+          margin: auto;
+     }
+     .fruit .fr-img img {
+          width: 100%;
+     }
+      /* ------------------------------------------------testimonials------------------------------------------------------ */
+      .testimonial .testi-info{
+          margin-top: 30px;
+     }
+     .testimonial .carousel .carousel-item .carousel-caption {
+          width: 659px;
+      }
+     .footer .foot-data{
+         padding: 0 0 28px;
+     }
+}
+/* ---------------------------------------------------large-size----------------------------------------------------------- */
+@media (min-width:992px){
+     .main-banner .banner-img{
+          margin-right: -15px!important;
+          display: block;
+      }
+      .main-banner .banner-img img {
+          margin: 0 !important;
+          width: 100%!important;
+      } 
+      .main-banner .banner-img img {
+          height: 474px;
+      } 
+      .main-banner .banner-img h3 {
+          display: block!important;
+          top: 41%;
+          left: 51%;
+          font-size: 40px;
+          width: 100%;
+          text-align: center;
+      }
+      .main-banner .banner-info h2 {
+          font-size: 28px;
+      }
+      /* --------------------------------------------about---------------------------------------------------------------- */
+      .about .about-img {
+          margin-left: -15px!important;
+      }
+      .about .about-info {
+          margin: -49px 0 0;
+      }
+      .about .about-info a {
+          margin-top: 80px;
+      }
+      /* -------------------------------------------our-------------------------------------------------------------------- */
+      .our .our-img {
+          margin-right: -15px;
+      }
+      .our .order-2 {
+         order: 1;
+      }
+      .our .order-1 {
+          order: 2;
+      }
+      .our .our-info p {
+          text-align: justify;
+      }
+      .our {
+         height: 500px;
+      }
+      /* -----------------------------------------images--------------------------------------------------------------- */
+      .fruit .images {
+          margin-left: -15px;
+      }
+      .fruit .fr-img {
+          margin-left: 0;
+      }
+      .fruit .images .fr1 {
+          margin-left: -10px;
+      }
+      .fruit .fr-img img {
+          max-width: 100%!important;
+      }
+      .fruit .fruit-info p {
+          margin: 8px 0 0;
+      }
+      .fruit .fruit-info h2 {
+          font-size: 31px;
+      }
+      .fruit .fruit-info a {
+          margin-top: 14px;
+      }
+            /* -----------------------------------------testimonial--------------------------------------------------------------- */
+      .testimonial .carousel .carousel-item .carousel-caption {
+          width: 440px;
+      }
+      .testimonial .carousel .carousel-item {
+          height: 254px;
+          margin: 0 -18px 0;
+      }
+      
+}
+/* ===================================================large-size-------------------------------------------------------------- */
+@media(min-width:1200px){
+     .testimonial .carousel .carousel-item {
+          height: 254px;
+          margin: 0 -5px 0;
+      }
+      .testimonial .carousel .carousel-item .carousel-caption {
+          width: 491px;
+      }
+      .testimonial .order-2 {
+         order: 1;
+      }
+      .testimonial .order-1 {
+          order: 2;
+       }
+}
+
+
+
+
+
